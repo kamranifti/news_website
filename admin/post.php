@@ -57,7 +57,7 @@
                                     <td><?php echo $row['post_date']; ?></td>
                                     <td><?php echo $row['username']; ?></td>
                                     <td class='edit'><a href='update-post.php?id=<?php echo $row['post_id']; ?>'><i style="color: green;" class='fa fa-edit'></i></a></td>
-                                    <td class='delete' ><a  href="delete-post.php?id=<?php echo $row['post_id']; ?>&catid=<?php echo $row['category']; ?>"onclick="return confirm('Are you sure? You want to delete this user?');"><i style="color: red;" class='fa fa-trash-o'></i></a></td>
+                                    <td class='delete'><a href="delete-post.php?id=<?php echo $row['post_id']; ?>&catid=<?php echo $row['category']; ?>" onclick="return confirm('Are you sure? You want to delete this user?');"><i style="color: red;" class='fa fa-trash-o'></i></a></td>
                                 </tr>
                             <?php  }
                         } else { ?>
