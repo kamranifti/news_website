@@ -35,12 +35,12 @@ if(!isset($_SESSION["username"])){
                 <div class="row">
                     <!-- LOGO -->
                     <div class="col-md-2">
-                        <a href="post.php"><img class="logo" src="images/news.jpg"></a>
+                        <a href="post.php"><img class="logo" style="border-radius: 10px;position:relative; top:23px;" src="images/mount.png"></a>
                     </div>
                     <!-- /LOGO -->
                       <!-- LOGO-Out -->
                     <div class="col-md-offset-9  col-md-3">
-                        <a href="logout.php" class="admin-logout" >Hello<span style="color:pink;"> <?php echo $_SESSION["username"] ?>,</span> logout</a>
+                        <a href="logout.php" style="position: relative; bottom:37px;" class="admin-logout" >Hello<span style="color:pink;"> <?php echo $_SESSION["username"] ?>,</span> logout</a>
                     </div>
                     <!-- /LOGO-Out -->
                 </div>
@@ -66,6 +66,9 @@ if(!isset($_SESSION["username"])){
                             </li>
                             <li>
                                 <a href="users.php">Users</a>
+                            </li>
+                            <li>
+                                <a href="settings.php">Settings</a>
                             </li>
                                 <?php } ?>
                         </ul>

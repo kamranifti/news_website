@@ -30,16 +30,14 @@ $result = mysqli_query($conn, $sql);
                             <td class='id'><?php echo $row['category_id'];?></td>
                             <td><?php echo $row['category_name'];?></td>
                             <td><?php echo $row['post'];?></td>
-                            <td class='edit'><a href='update-category.php'><i style="color: green;" class='fa fa-edit'></i></a></td>
+                            <td class='edit'><a href='update-category.php?id=<?php echo $row['category_id']; ?>'><i style="color: green;" class='fa fa-edit'></i></a></td>
                             <td class='delete'><a href='delete-category.php'><i style="color: red;" class='fa fa-trash-o'></i></a></td>
                         </tr> 
                         <?php } ?>
                     </tbody>
                 </table>
                 <ul class='pagination admin-pagination'>
-                    <li class="active"><a>1</a></li>
-                    <li><a>2</a></li>
-                    <li><a>3</a></li>
+                    <li class="active"><a href="category.php">1</a></li>
                 </ul>
             </div>
         </div>
